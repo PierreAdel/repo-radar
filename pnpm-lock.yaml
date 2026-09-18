@@ -7,7 +7,14 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@repo-radar/github':
+        specifier: workspace:*
+        version: link:packages/github
     devDependencies:
+      '@vercel/node':
+        specifier: ^13.0.1
+        version: 13.0.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@vercel/build-utils@14.10.1)
       turbo:
         specifier: ^2.10.13
         version: 2.10.13
