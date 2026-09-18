@@ -2,5 +2,5 @@
   "installCommand": "npx --yes pnpm@10.34.5 install --frozen-lockfile",
   "buildCommand": "pnpm exec turbo run build --filter=@repo-radar/web...",
   "outputDirectory": "apps/web/dist",
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/index.html" }]
 }
